@@ -13,5 +13,5 @@ jobs:
       uses: php-actions/phpunit@master
       with:
         version: 9.6
-        configuration: test/phpunit.xml
+        configuration: phpunit.xml
         php_extensions: "sqlite3 xml zip gd mbstring"
