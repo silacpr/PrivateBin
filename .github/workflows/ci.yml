@@ -14,4 +14,5 @@ jobs:
       with:
         version: 9.6
         configuration: phpunit.xml
-        php_extensions: "sqlite3 xml zip gd mbstring"
+        php_extensions: "sqlite3 xml zip gd mbstring xdebug"
+        coverage_cobertura: "coverage/cobertura.xml"
