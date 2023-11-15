@@ -14,5 +14,5 @@ jobs:
       with:
         version: 9.6.11
         php_version: 8.0
-        configuration: phpunit.xml
         php_extensions: "sqlite3 xml gd mbstring zip"
+        configuration: phpunit.xml
