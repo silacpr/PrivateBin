@@ -12,4 +12,4 @@ jobs:
     - name: PHPUnit Tests
       run: php -d error_reporting="E_ALL & ~E_DEPRECATED & ~E_NOTICE" vendor/bin/phpunit --configuration phpunit.xml
       env:
-        PHP_EXTENSIONS: "sqlite3 xml gd mbstring zip xdebug"
+        PHP_EXTENSIONS: "sqlite3 xml gd mbstring zip"
