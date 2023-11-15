@@ -12,7 +12,8 @@ jobs:
     - name: PHPUnit Tests
       uses: php-actions/phpunit@master
       with:
-        version: 9.0
+        version: 9.6
         configuration: phpunit.xml
-        php_extensions: "sqlite3 xml dom zip openssl xsl gd mbstring"
+        php_extensions: "sqlite3 xml zip gd mbstring"
+        php_version: 8.0
         
