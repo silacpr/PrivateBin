@@ -14,5 +14,5 @@ jobs:
       with:
         version: 9.0
         configuration: phpunit.xml
-        php_extensions: "sqlite3 xml dom zip gd mbstring"
+        php_extensions: "sqlite3 xml dom zip openssl xsl gd mbstring PDO pdo_sqlite"
         coverage_cobertura: "coverage/cobertura.xml"
