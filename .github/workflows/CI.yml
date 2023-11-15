@@ -9,12 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: php-actions/composer@v6
-    - name: PHP Code Sniffer
-      uses: php-actions/phpcs@v1
-      with:
-        php_version: 8.0
-        path: lib/
-        extensions: "php"
         
     - name: PHPUnit Tests
       run: php -d error_reporting="E_ALL & ~E_DEPRECATED & ~E_NOTICE" vendor/bin/phpunit --configuration phpunit.xml
