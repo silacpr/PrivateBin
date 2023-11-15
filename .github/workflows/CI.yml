@@ -14,6 +14,6 @@ jobs:
       with:
         version: 9.6.11
         php_version: 8.0
-        php_extensions: "gd mbstring openssl PDO pdo_sqlite sqlite3 xml xsl zip curl"
+        php_extensions: "sqlite3 xml gd mbstring zip xdebug"
         configuration: phpunit.xml
         coverage_cobertura: coverage/cobertura.xml
