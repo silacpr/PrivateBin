@@ -9,11 +9,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: php-actions/composer@v6
+    - name: Set Xdebug coverage mode
+      run: echo "XDEBUG_MODE=coverage" >> $GITHUB_ENV
     - name: PHPUnit Tests
       uses: php-actions/phpunit@master
       with:
         version: 9.6.11
         php_version: 8.0
-        php_extensions: "sqlite3 xml gd mbstring zip"
+        php_extensions: "sqlite3 xml gd mbstring zip xdebug"
         configuration: phpunit.xml
         coverage_cobertura: coverage/cobertura.xml
