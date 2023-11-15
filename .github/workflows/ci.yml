@@ -12,7 +12,7 @@ jobs:
     - name: PHPUnit Tests
       uses: php-actions/phpunit@master
       with:
-        version: 9.6
+        version: 9.0
         configuration: phpunit.xml
         php_extensions: "sqlite3 xml zip gd mbstring"
         coverage_cobertura: "coverage/cobertura.xml"
