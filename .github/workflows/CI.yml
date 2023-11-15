@@ -10,10 +10,6 @@ jobs:
     - uses: actions/checkout@v3
     - uses: php-actions/composer@v6
     - name: PHPUnit Tests
-      uses: php-actions/phpunit@master
-      with:
-        version: 9.6.11
-        php_version: 8.0
-        php_extensions: "sqlite3 xml gd mbstring zip"
-        configuration: phpunit.xml
-        coverage_cobertura: coverage/cobertura.xml
+      run: php -d error_reporting="E_ALL & ~E_DEPRECATED & ~E_NOTICE" vendor/bin/phpunit --configuration phpunit.xml
+      env:
+        PHP_EXTENSIONS: "sqlite3 xml gd mbstring zip xdebug"
