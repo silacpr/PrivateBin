@@ -14,6 +14,6 @@ jobs:
       with:
         version: 9.6.11
         php_version: 8.0
-        php_extensions: "filter ftp gd gettext hash iconv json libxml mbstring openssl pcntl pcre PDO pdo_sqlite Phar posix readline Reflection session shmop SimpleXML sockets sodium SPL sqlite3 standard sysvmsg sysvsem sysvshm tokenizer xml xmlreader xmlrpc xmlwriter xsl zip zlib"
+        php_extensions: "gd mbstring openssl PDO pdo_sqlite sqlite3 xml xsl zip curl"
         configuration: phpunit.xml
         coverage_cobertura: coverage/cobertura.xml
