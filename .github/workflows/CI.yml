@@ -13,12 +13,10 @@ jobs:
       uses: php-actions/phpcs@v1
       with:
         php_version: 8.0
-        php_extensions: "sqlite3 xml gd mbstring zip"
         path: lib/
+        extensions: "php"
         
     - name: PHPUnit Tests
       run: php -d error_reporting="E_ALL & ~E_DEPRECATED & ~E_NOTICE" vendor/bin/phpunit --configuration phpunit.xml
       env:
         PHP_EXTENSIONS: "sqlite3 xml gd mbstring zip"
-        
-
