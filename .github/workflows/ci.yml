@@ -16,6 +16,6 @@ jobs:
       with:
         version: 9.6.11
         php_version: 8.0
-        php_extensions: "sqlite3 xml gd mbstring zip xdebug"
+        php_extensions: "sqlite3 xml gd mbstring zip xdebug bcmath"
         configuration: phpunit.xml
         coverage_cobertura: coverage/cobertura.xml
